@@ -36,7 +36,7 @@ public class CuttingWood {
             }
         }
 
-        return right; // or can return left
+        return right; //or can return left
     }
 
     private static boolean isEnoughWood(int h, int[] heights, int k) {
