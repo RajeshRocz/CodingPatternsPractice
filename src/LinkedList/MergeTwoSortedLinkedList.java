@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.PriorityQueue;
+
 public class MergeTwoSortedLinkedList {
 
     public static void main(String[] args) {
@@ -8,7 +10,10 @@ public class MergeTwoSortedLinkedList {
 
     private static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
+        PriorityQueue<ListNode> minHeap=new PriorityQueue<>(
+                (a,b)-> Integer.compare(a.val, b.val)
 
+        );
         if(list1==null){
             return list2;
         }else if(list2==null){

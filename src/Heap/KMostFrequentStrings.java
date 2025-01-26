@@ -68,7 +68,7 @@ public class KMostFrequentStrings {
     }
 }
 
-class Pair<K extends Comparable<K>,V extends Comparable<V>>{
+class Pair<K ,V >{
     K str;
     V freq;
 
