@@ -17,6 +17,7 @@ public class ValidParenthesisString {
         Stack<Integer> open = new Stack<>();
         Stack<Integer> star = new Stack<>();
 
+
         for (int i = 0; i < s.length(); i++) {
 
             if (s.charAt(i) == '(') {
@@ -35,7 +36,10 @@ public class ValidParenthesisString {
             }
 
         }
+        String str="73647";
+        boolean matches = str.matches("-?\\\\d+(\\\\.\\\\d+)?");
 
+        System.out.println(matches);
         //Now do left over open braces
         while (!open.isEmpty()) {
             if (star.isEmpty()) {
