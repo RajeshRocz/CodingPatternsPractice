@@ -3,7 +3,7 @@ package KMPAlgorithm;
 public class FindShortestPalindrome {
     //leetcode 214 problem
     public static void main(String[] args) {
-        System.out.println("Result:" + findShortestPalindrome("aa"));
+        System.out.println("Result:" + findShortestPalindrome("aab"));
     }
 
     private static String findShortestPalindrome(String s) {
