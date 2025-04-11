@@ -7,6 +7,7 @@ public class FindShortestPalindrome {
     }
 
     private static String findShortestPalindrome(String s) {
+
         String original = s;
         StringBuilder sb = new StringBuilder(s);
         s = sb.reverse().toString();
