@@ -36,10 +36,7 @@ public class ValidParenthesisString {
             }
 
         }
-        String str="73647";
-        boolean matches = str.matches("-?\\\\d+(\\\\.\\\\d+)?");
 
-        System.out.println(matches);
         //Now do left over open braces
         while (!open.isEmpty()) {
             if (star.isEmpty()) {
